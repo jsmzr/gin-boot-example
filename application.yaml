@@ -1,0 +1,5 @@
+boot:
+  prometheus:
+    port: 9999
+    path: /mertrics
+    # enabled: false
