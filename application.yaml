@@ -3,3 +3,7 @@ boot:
     port: 9999
     path: /mertrics
     # enabled: false
+  skywalking:
+    address: 127.0.0.1:11800
+    name: gin-boot-example
+    enabled: true
