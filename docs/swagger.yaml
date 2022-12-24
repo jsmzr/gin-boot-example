@@ -1,0 +1,21 @@
+info:
+  contact: {}
+paths:
+  /ping:
+    get:
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: swagger-demo
+      tags:
+      - demo
+  /user:
+    get:
+      produces:
+      - application/json
+      responses: {}
+      tags:
+      - user
+swagger: "2.0"

@@ -7,10 +7,16 @@ import (
 	"github.com/jsmzr/boot-gin"
 )
 
+// @Summary swagger-demo
+// @Tags demo
+// @Router /ping [get]
+// @Success 200 {string} pong
+func Ping(c *gin.Context) {
+	c.String(http.StatusOK, "pong")
+}
+
 func InitDemoRouter(e *gin.Engine) {
-	e.GET("/ping", func(ctx *gin.Context) {
-		ctx.JSON(http.StatusOK, gin.H{"data": "pong"})
-	})
+	e.GET("/ping", Ping)
 }
 
 func init() {

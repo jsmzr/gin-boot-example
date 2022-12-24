@@ -1,0 +1,35 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "contact": {}
+    },
+    "paths": {
+        "/ping": {
+            "get": {
+                "tags": [
+                    "demo"
+                ],
+                "summary": "swagger-demo",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "/user": {
+            "get": {
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "user"
+                ],
+                "responses": {}
+            }
+        }
+    }
+}
